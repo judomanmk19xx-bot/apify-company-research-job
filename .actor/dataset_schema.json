@@ -1,0 +1,113 @@
+{
+    "$schema": "https://apify.com/schemas/v1/dataset.ide.json",
+    "actorSpecification": 1,
+    "title": "Company research results",
+    "description": "One item per completed company research job: summary, footprint and briefing.",
+    "fields": {
+        "type": "object",
+        "properties": {
+            "company": {
+                "type": "string",
+                "title": "Company"
+            },
+            "domain": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "title": "Domain"
+            },
+            "geo": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "title": "Geography"
+            },
+            "generated_at": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "title": "Generated at"
+            },
+            "research_summary": {
+                "type": [
+                    "object",
+                    "null"
+                ],
+                "title": "Research summary"
+            },
+            "footprint": {
+                "type": [
+                    "object",
+                    "null"
+                ],
+                "title": "Footprint"
+            },
+            "briefing": {
+                "type": [
+                    "object",
+                    "string",
+                    "null"
+                ],
+                "title": "Briefing"
+            },
+            "web": {
+                "type": [
+                    "object",
+                    "null"
+                ],
+                "title": "Web"
+            },
+            "partial_failures": {
+                "type": [
+                    "array",
+                    "null"
+                ],
+                "title": "Partial failures"
+            },
+            "source_service": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "title": "Source service"
+            }
+        }
+    },
+    "views": {
+        "overview": {
+            "title": "Overview",
+            "transformation": {
+                "fields": [
+                    "company",
+                    "domain",
+                    "geo",
+                    "generated_at"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "company": {
+                        "label": "Company",
+                        "format": "text"
+                    },
+                    "domain": {
+                        "label": "Domain",
+                        "format": "text"
+                    },
+                    "geo": {
+                        "label": "Geography",
+                        "format": "text"
+                    },
+                    "generated_at": {
+                        "label": "Generated at",
+                        "format": "text"
+                    }
+                }
+            }
+        }
+    }
+}
