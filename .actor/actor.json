@@ -1,1 +1,14 @@
-{"actorSpecificationVersion":1,"buildTag":"latest","description":"Give a company name; get a finished research job back: current headline signals with sources, digital footprint, and a written briefing, generated live for your run. One dataset item per job. You pay per completed job, not per API call.","dockerfile":"../Dockerfile","input":"./input_schema.json","meta":{"templateId":"python-start"},"name":"company-research-job","readme":"../README.md","title":"Company Research Job — finished company intelligence, per result","version":"1.0"}
+{
+    "actorSpecification": 1,
+    "buildTag": "latest",
+    "description": "Give a company name; get a finished research job back: current headline signals with sources, digital footprint, and a written briefing, generated live for your run. One dataset item per job. You pay per completed job, not per API call.",
+    "dockerfile": "../Dockerfile",
+    "input": "./input_schema.json",
+    "meta": {
+        "templateId": "python-start"
+    },
+    "name": "company-research-job",
+    "readme": "../README.md",
+    "title": "Company Research Job \u2014 finished company intelligence, per result",
+    "version": "1.0"
+}
